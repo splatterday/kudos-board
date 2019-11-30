@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kudos Board</title>
+
+
+    <style>
+        .timer {
+            text-align: center;
+            padding: 5px;
+            height: 30px;
+            background-color: rgb(223, 140, 42);
+        }
+        
+        #demo {
+            width: 100px;
+            display: inline-block;
+        }
+    </style>
+
+    <title>Kudos Leaderboard</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid" style="color:#ffc01d;">
+            <div class="navbar-header text-danger" style="padding: none;">
+                <h1 style="color:#ffc01d; margin-left:50%; margin-right: auto; border: 1px white solid; width: 50%">RHCB Excellence Leaderboard</h1>
+                </center>
+            </div>
+        </div>
+        <div class="timer">
+
+            <p style="color:black;">it has been <span id="demo"></span> since a KUDO was given! GET TO WORK</p>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="panel-group">
+            <div class="panel panel-danger">
+                <div class="panel-heading" style="background-color:#ffc01d"><span style="color:black;">Post a Kudo!</span></div>
+                <div class="panel-body">
+                    <form action="" id="message-form">
+                        <div class="form-group">
+                            <label>Details:</label>
+                            <textarea id="message" type="text" class="form-control"></textarea>
+                        </div>
+                        <button class="btn btn-default">Kudos!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="panel-group">
+            <div class="panel panel-default">
+                <div class="panel-heading">Vote early and OFTEN!</div>
+                <div class="panel-body">
+                    <ul class="message-board">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAoQmn6eI35POI4XtedHuykwZK1I6kWOwM",
+            authDomain: "jsd327-8a135.firebaseapp.com",
+            databaseURL: "https://jsd327-8a135.firebaseio.com",
+            projectId: "jsd327-8a135",
+            storageBucket: "jsd327-8a135.appspot.com",
+            messagingSenderId: "528990889137"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+
+
+    <script src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
